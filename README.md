@@ -4,6 +4,9 @@ This app demonstrates a bug in which mouseDown/mouseUp events are not correctly
 forwarded up the responder chain for views nested inside an `NSPopover` when the
 Reduced Transparency accessibility setting is enabled prior to app startup.
 
+A Radar has been filed and is replicated on OpenRadar:
+http://www.openradar.me/FB12050037
+
 ## Overview
 The included app includes an `NSViewController` subclass, `MyViewController`,
 that simply embeds an `NSView` and adds a `mouseDown:(NSEvent*)` handler that
